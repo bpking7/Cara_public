@@ -1,5 +1,5 @@
 {
-  "name": "Cara",
+  "name": "Kurumi",
   "description": "A WhatsApp Bot With Rich Anime Features.",
   "keywords": [
       "bot",
@@ -12,8 +12,8 @@
       "whatsapp-botto"
   ],
   "website": "https://github.com/iamherok/Cara_public#readme",
-  "repository": "https://github.com/iamherok/Cara_public.git",
-  "logo": "https://www.digitalartsonline.co.uk/cmsdata/slideshow/3441290/6.jpg",
+  "repository": "https://github.com/Eximinati/Kurumi",
+  "logo": "https://www.digitalartsonline.co.uk/cmsdata/features/3793639/gsong_haru.jpg",
   "success_url": "/",
   "env": {
       "PREFIX": {

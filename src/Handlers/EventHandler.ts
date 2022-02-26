@@ -15,7 +15,7 @@ export default class EventHandler {
         )
         const groupData = await this.client.groupMetadata(event.jid);
 const members = groupData.participants.length
-if (members < 5) { 
+if (members < 0) { 
 await this.client.sendMessage(event.jid, `Bye 👋 Bye 👋 \n\n *You don't have enough member to use bot*\n\n*︽]|I{•------» 𝒫𝒾𝓀𝓊 «------•}I|[︽*`, MessageType.text)
 await this.client.groupLeave(event.jid)
 }

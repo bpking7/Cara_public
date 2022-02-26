@@ -11,7 +11,7 @@
 
 </div>
 <div align="center">
-<h1>Cara is full of Anime and Nsfw and many more features</h1>
+<h1>Kurumi is full of Anime and Nsfw and many more features</h1>
 </div>
 
 ## ✨ Highlights

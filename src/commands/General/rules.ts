@@ -20,7 +20,7 @@ export default class Command extends BaseCommand {
     }
 
     run = async (M: ISimplifiedMessage): Promise<void> => {
-        return void M.reply( await request.buffer(`https://i.ibb.co/FWTD0JT/images-1-7.jpg`),
+        return void M.reply( await request.buffer(`https://i.ibb.co/p2JhQfX/My-life-my-rule-thats-my-attitude.jpg`),
         MessageType.image,
                     undefined,
                     undefined,

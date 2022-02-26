@@ -29,9 +29,9 @@ export default class Command extends BaseCommand {
 			return void (await M.reply(`Please provide the Broadcast Message.`));
 		const term = joined.trim();
 		const gifs = [
-			"https://c.tenor.com/tZVpbfTIjNMAAAAC/pikachu.mp4",
-			"https://c.tenor.com/p6I6OADySl4AAAAC/piku.mp4",
-			"https://c.tenor.com/jHHKjbx6ZIoAAAAC/pikachu.mp4",
+			"https://c.tenor.com/U_nsDqH7klkAAAAC/ano-blushing.mp4",
+			"https://c.tenor.com/pEVZJBfnadcAAAAC/kawaii-cute.mp4",
+			"https://c.tenor.com/WCNVOmUUPekAAAAj/gumi-echo.mp4",
 		];
 		const selected = gifs[Math.floor(Math.random() * gifs.length)];
 		// eslint-disable-next-line @typescript-eslint/no-explicit-any

@@ -13,13 +13,13 @@ export default class Command extends BaseCommand {
             description: 'Displays the help menu or shows the info of the command provided',
             category: 'general',
             usage: `${client.config.prefix}help (command_name)`,
-            aliases: ['h', 'menu', 'piku', 'cmd']
+            aliases: ['h', 'menu', 'kurumi', 'cmd']
         })
     }
 
     run = async (M: ISimplifiedMessage, parsedArgs: IParsedArgs): Promise<void> => {
             const n = [
-            './assets/Pikachu/Pikachu.mp4'
+            './assets/Pikachu/help.mp4'
         ]
         let rin = n[Math.floor(Math.random() * n.length)]
         if (!parsedArgs.joined) {
@@ -38,7 +38,7 @@ export default class Command extends BaseCommand {
             let text = `
 ╭─「check guide command *,guide*」
 │⋊ ᴜꜱᴇʀ: *${M.sender.username}*
-│⋊ ɴᴀᴍᴇ: PIKU
+│⋊ ɴᴀᴍᴇ: *KURUMI*
 │⋊ ᴘʀᴇꜰɪx: ${this.client.config.prefix}
 │⋊ ᴏᴡɴᴇʀ: *${this.client.config.prefix}mods*
 │⋊ ᴏᴡɴᴇʀ: if you wanna add bot ask to owner
@@ -55,7 +55,7 @@ export default class Command extends BaseCommand {
             caption: `${text} 
  ──❅┈[ *Chitoge* ]┈❅───
 ┌────────────┈❅
-│   🧨 *PIKU*
+│   🧨 *KURUMI*
 │   ©️ Synthesized Infinity Botto
 └────────────┈⁂
 ❅┈[𝐇𝐚𝐯𝐞 𝐆𝐫𝐞𝐚𝐭 𝐃𝐚𝐲]┈❅

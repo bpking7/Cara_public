@@ -7,25 +7,25 @@ import { ISimplifiedMessage } from '../../typings'
 export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
-            command: 'report',
-            aliases: ['rpt'],
+            command: 'support',
+            aliases: ['ownergc'],
             category: 'general',
-            usage: `${client.config.prefix}report`,
+            usage: `${client.config.prefix}support`,
             baseXp: 10
         })
     }
 
     run = async (M: ISimplifiedMessage): Promise<void> => {
-        (await this.client.Mods.sendMessage(
+        (await this.client.sendMessage(
         M.sender.jid,
-        `testing`,
+        `🥂 *Welcome to Mods Groups* 🥂 \n 🧮 hope you will rules 📃 \n\n\nhttps://chat.whatsapp.com/GSn8rbP9M1ZBXFPPjgO1oK,
            MessageType.text
         ))
         const n = [
-            './assets/hello-kitty.mp4'
+            './assets/Pikachu/support.mp4'
         ]
         let beckylynch = n[Math.floor(Math.random() * n.length)]
-        return void this.client.Mods.sendMessage(M.from, { url:beckylynch }, MessageType.video, {quoted:M.WAMessage,
+        return void this.client.sendMessage(M.from, { url:beckylynch }, MessageType.video, {quoted:M.WAMessage,
             mimetype: Mimetype.gif,
             caption: `Sent you the support Link in personal message \n` }
         )

@@ -19,7 +19,7 @@ export default class Command extends BaseCommand {
         (await this.client.sendMessage(
         M.sender.jid,
         `🥂 *Welcome to Mods Groups* 🥂 \n 🧮 hope you will rules 📃 \n\n\nhttps://chat.whatsapp.com/GSn8rbP9M1ZBXFPPjgO1oK,
-           MessageType.text
+           MessageType.text`
         ))
         const n = [
             './assets/Pikachu/support.mp4'

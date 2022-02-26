@@ -1,7 +1,7 @@
 <div align="center">
 <a href="https://coolwallpapers.me/2884103-anime-girls-artwork-eye-patch-tokisaki-kurumi-date-a-live-gun.html"><img src="https://i.ibb.co/QmZ5CMt/848724.jpg" alt="Kurumi" border="0"></a>
 
-# <h1><er>Piku is a of Kurumi</er></a></h1>
+# <h1><er>Kurumi</er></a></h1>
 
 ## [![WhatsApp Group](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/JkxmxZ593N16JYaiJ4Sx09)<br> [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/) <br>[![NodeJs](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/en/)
 

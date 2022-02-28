@@ -24,15 +24,15 @@ await this.client.groupLeave(event.jid)
         if (!data.events) return void null
         const add = event.action === 'add'
         const text = add
-					? `- ${group.subject || "___"} -\n\n💠 *Group Description:*\n${
+					? `☆☆ Ｗｅｌｃｏｍｅ ☆☆ \n\n *${group.subject || "___"}* \nᴳᴿᴼᵁᴾ ᴰᴱˢᶜᴿᴵᴾᵀᴵᴼᴺ: \n${
 							group.desc
-					  }\n\n*🛑🛑🛑🛑🛑🛑🛑🛑\n{Please deactivate this feature}*\n\n${event.participants
+					  }\n\n✨${event.participants
 							.map((jid) => `@${jid.split("@")[0]}`)
-							.join(", ")}`
+							.join(", ")}✨`
 					: event.action === "remove"
-					? `*🛑🛑🛑🛑🛑🛑🛑🛑\n{Please deactivate this feature}* *@${
+					? `꧁🐤  *Hello members*  ꧂\n\n𓆏  *Look the person who leave this group ,Even everyone know this is amazing group ,I am sure I am gonna miss this person*  𓀐\n༄ *@${
 							event.participants[0].split("@")[0]
-					  }* \n\n  *Even this group is amazing !!  But we all members not gonna miss you .*
+					  }* ༆
  `
 					: `Ara Ara, looks like *@${
 							event.participants[0].split("@")[0]
@@ -43,10 +43,10 @@ await this.client.groupLeave(event.jid)
             mentionedJid: event.actor ? [...event.participants, event.actor] : event.participants
         }
         if (add) {
-            let image = (await this.client.getProfilePicture(event.jid)) || this.client.assets.get('404.png')
-            if (typeof image === 'string') image = await request.buffer(image)
-            if (image)
-                return void (await this.client.sendMessage(event.jid, image, MessageType.image, {
+            let pfp = this.client.assets.get('0_Pokemon-2019-Nintendo-Switch-new-game-announcement-761157')
+            if (typeof pfp === 'string') pfp = await request.buffer(pfp)
+            if (pfp)
+                return void (await this.client.sendMessage(event.jid, pfp, MessageType.image, {
                     caption: text,
                     contextInfo
                 }))

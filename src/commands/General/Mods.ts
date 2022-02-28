@@ -24,7 +24,7 @@ export default class Command extends BaseCommand {
                     user.notify || user.vname || user.name || 'null'
                 }*\n☎️ *Contact: https://wa.me/+${user?.jid?.split('@')[0]}*\n\n`)
         )
-        text += `\n ıllıllı ᴾᴵᴷᵁ ıllıllı`
+        text += `\n ıllıllı 𝕂𝕦𝕣𝕦𝕞𝕚 ıllıllı`
         return void M.reply(text)
     }
 }

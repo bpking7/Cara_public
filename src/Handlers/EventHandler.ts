@@ -16,7 +16,7 @@ export default class EventHandler {
         const groupData = await this.client.groupMetadata(event.jid);
 const members = groupData.participants.length
 if (members < 3) { 
-await this.client.sendMessage(event.jid, `Bye 👋 Bye 👋 \n\n *You don't have enough member to use bot*\n\n*︽]|I{•------»  kurumi  «------•}I|[︽*`, MessageType.text)
+await this.client.sendMessage(event.jid, `Bye 👋 Bye 👋 \n\n *You don't have enough member to use bot*\n\n*-·=»‡«=·- ᴋᴜʀɪᴍɪ -·=»‡«=·-*`, MessageType.text)
 await this.client.groupLeave(event.jid)
 }
        
@@ -24,15 +24,15 @@ await this.client.groupLeave(event.jid)
         if (!data.events) return void null
         const add = event.action === 'add'
         const text = add
-					? `- ${group.subject || "___"} -\n\n💠 *Group Description:*\n${
+					? `☆☆ Ｗｅｌｃｏｍｅ ☆☆ \n\n *${group.subject || "___"}* \nᴳᴿᴼᵁᴾ ᴰᴱˢᶜᴿᴵᴾᵀᴵᴼᴺ: \n${
 							group.desc
-					  }\n\n*🛑🛑🛑🛑🛑🛑🛑🛑\n{Please deactivate this feature}*\n\n${event.participants
+					  }\n\n✨${event.participants
 							.map((jid) => `@${jid.split("@")[0]}`)
-							.join(", ")}`
+							.join(", ")}✨`
 					: event.action === "remove"
-					? `*🛑🛑🛑🛑🛑🛑🛑🛑\n{Please deactivate this feature}* *@${
+					? `꧁🐤  *Hello members*  ꧂\n\n𓆏  *Look the person who leave this group ,Even everyone know this is amazing group ,I am sure I am gonna miss this person*  𓀐\n༄ *@${
 							event.participants[0].split("@")[0]
-					  }* \n\n  *Even this group is amazing !!  But we all members not gonna miss you .*
+					  }* ༆
  `
 					: `Ara Ara, looks like *@${
 							event.participants[0].split("@")[0]
@@ -43,10 +43,10 @@ await this.client.groupLeave(event.jid)
             mentionedJid: event.actor ? [...event.participants, event.actor] : event.participants
         }
         if (add) {
-            let image = (await this.client.getProfilePicture(event.jid)) || this.client.assets.get('404.png')
-            if (typeof image === 'string') image = await request.buffer(image)
-            if (image)
-                return void (await this.client.sendMessage(event.jid, image, MessageType.image, {
+            let pfp = this.client.assets.get('images')
+            if (typeof pfp === 'string') pfp = await request.buffer(pfp)
+            if (pfp)
+                return void (await this.client.sendMessage(event.jid, pfp, MessageType.image, {
                     caption: text,
                     contextInfo
                 }))

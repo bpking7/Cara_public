@@ -12,7 +12,7 @@ export default class Command extends BaseCommand {
 			command: "spank",
 			description: `Know it yourself.`,
 			aliases: ["spank"],
-			category: "Weeb",
+			category: "weeb",
 			usage: `${client.config.prefix}spank`,
 			baseXp: 50,
 		});
